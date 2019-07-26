@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>demo1-hello-world</module>
+        <module>sys-entity</module>
     </modules>
 
     <name>hibernate-demo</name>
