@@ -11,6 +11,7 @@
     <modules>
         <module>demo1-hello-world</module>
         <module>sys-entity</module>
+        <module>demo2-hello-world-using-annotations</module>
     </modules>
 
     <name>hibernate-demo</name>

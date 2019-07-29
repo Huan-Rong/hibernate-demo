@@ -2,6 +2,7 @@ package site.blbc.entity;
 
 import lombok.*;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
@@ -15,8 +16,9 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class SysAccountEntity {
-    private Long id;
+@Entity
+@Table(name = "sys_account", schema = "test")
+public class SysAccountEntity extends BaseEntity {
     private String name;
     private String username;
     private String password;
