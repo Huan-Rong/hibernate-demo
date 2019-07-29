@@ -13,6 +13,7 @@
         <module>sys-entity</module>
         <module>demo2-hello-world-using-annotations</module>
         <module>demo3-without-xml</module>
+        <module>demo4-jpa-hello-world</module>
     </modules>
 
     <name>hibernate-demo</name>
@@ -22,6 +23,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <jpa.version>1.0.2.Final</jpa.version>
         <hibernate.version>5.3.7.Final</hibernate.version>
         <mysql.version>5.1.47</mysql.version>
         <junit.version>4.11</junit.version>
@@ -32,6 +34,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- JPA API -->
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.2-api</artifactId>
+                <version>${jpa.version}</version>
+            </dependency>
+
             <!-- Hibernate -->
             <dependency>
                 <groupId>org.hibernate</groupId>

@@ -55,6 +55,7 @@ public class AppTest {
         }
     }
 
+    @SuppressWarnings("JpaQlInspection")
     @Test
     public void listTest() {
         Session session = sessionFactory.openSession();
