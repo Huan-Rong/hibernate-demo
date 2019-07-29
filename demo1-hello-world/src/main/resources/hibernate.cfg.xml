@@ -10,7 +10,7 @@
         <property name="connection.password">ian</property>
         <!-- In most cases, Hibernate is able to properly determine which dialect to use.
                 This is particularly useful if your application targets multiple databases. -->
-        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
         <!-- DB schema will be updated if needed -->
         <property name="hbm2ddl.auto">update</property>
 
